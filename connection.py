@@ -16,7 +16,7 @@ battery= vehicle.recv_match(type='BATTERY_STATUS', blocking=True)
 print(f"Pil Yuzdesi: {battery.battery_remaining}")
     
 message= vehicle.recv_match(type='VFR_HUD', blocking=True)
-print(f"Pitch:  {message.airspeed}")
+print(f"Airspeed:  {message.airspeed}")
 
 msg = vehicle.recv_match(type = 'HEARTBEAT', blocking = True)
 mode = mavutil.mode_string_v10(msg)
