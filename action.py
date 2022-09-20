@@ -34,5 +34,5 @@ def move(y,x,z):
         0,0,0,
         0,0
     ))
-def go_to(lat,lon,alt)
+def go_to(lat,lon,alt):
     vehicle.mav.mission_item_send(0,0,0,mavutil.mavlink.MAV_FRAME_GLOBAL_RELATIVE_ALT,mavutil.mavlink.MAV_CMD_NAV_WAYPOINT,2,0,0,0,0,0,lat,lon,alt)
